@@ -70,10 +70,10 @@ input_data_scaled = scaler.transform(input_data)
 if st.button('Dự đoán'):
     prediction = model.predict(input_data_scaled)
 
-    # prediction_proba = model.predict_proba(input_data_scaled)
-
+    prediction_proba = model.predict_proba(input_data_scaled)
+    
     # st.write(f'Xác suất không mắc bệnh tim: {(prediction_proba[0][0]*100):.2f}%')
-    # st.write(f'Xác xuất mắc bệnh tim: {(prediction_proba[0][1]*100):.2f}%')
+    st.write(f'Xác xuất mắc bệnh tim: {(prediction_proba[0]*100):.2f}%')
 
     st.subheader('Kết luận:')
     if prediction[0] == 1:

@@ -66,3 +66,18 @@ Và cuối cùng là biến phản hồi: CHD: Bệnh tim mạch vành.
 **Mục tiêu :**
 
 - Mục tiêu là xây dựng một số mô hình dự đoán trên bộ dữ liệu FHS và xem xét một số kỹ thuật khám phá và mô hình hóa.
+
+### Hướng dẫn chạy ứng dụng
+
+#### 1. Thêm một terminal mới.
+
+#### 2. Cài đặt các thư viện cần thiết theo cấu trúc: 
+``` bash
+pip install <library-name>
+```
+
+#### 3. Chạy lệnh: 
+```bash 
+streamlit run app.py
+```
+#### 4. Hoàn tất
